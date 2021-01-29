@@ -15,9 +15,11 @@ async function main(){
     for(var i = 1; i < 8; i++){
         const page = await browser.newPage();
         await page.goto(`https://dixie.edu/?s=viagra&sitesearch=0#gsc.tab=0&gsc.q=viagra&gsc.page=${i}`)
+        
+        //Here goes your code to grab every link in each search list before closing your page
         await page.close()
 
-        //Here goes your code to grab every link in each search list
+        
     }
 
    
